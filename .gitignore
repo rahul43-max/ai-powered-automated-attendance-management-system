@@ -1,0 +1,88 @@
+# ------------------------------
+# Python cache / tooling
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# ------------------------------
+# Virtual environments
+# ------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ------------------------------
+# Local environment / secrets
+# ------------------------------
+.env
+.env.*
+*.local
+
+# ------------------------------
+# Runtime logs / temp files
+# ------------------------------
+*.log
+logs/
+daemon_output.txt
+src/logic_test_output.txt
+tmp/
+temp/
+.cache/
+
+# ------------------------------
+# Project runtime artifacts
+# ------------------------------
+data/known_faces/
+data/attendance.db
+database/attendance.db
+src/face_encodings.pkl
+models/face_encodings.pkl
+*.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------
+# ML artifacts (if generated)
+# ------------------------------
+*.h5
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.tflite
+
+# ------------------------------
+# Frontend build dependencies/artifacts
+# ------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+
+# ------------------------------
+# Editor / OS files
+# ------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+!.vscode/extensions.json
+*.swp
+*.swo
+

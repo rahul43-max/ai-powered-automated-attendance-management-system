@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tkrec-red: #d12027;
+  --color-tkrec-blue: #00008b;
+  --color-tkrec-yellow: #fbbc04;
+  --color-tkrec-green: #10b981;
+  --color-tkrec-text: #333333;
+  --font-sans: 'Arial', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f4f4f4] text-tkrec-text antialiased;
+  }
+}
+
+@layer utilities {
+  .tkrec-card {
+    @apply bg-white border border-gray-300 shadow-sm rounded-sm;
+  }
+
+  .tkrec-header {
+    @apply bg-tkrec-blue text-white text-sm font-semibold p-2;
+  }
+
+  .tkrec-red-header {
+    @apply bg-[#e63946] text-white;
+  }
+}
+
+/* Custom table styling to match the strict portal lookup */
+table.tkrec-table {
+  @apply w-full border-collapse text-xs text-center border border-gray-300;
+}
+
+table.tkrec-table th,
+table.tkrec-table td {
+  @apply border border-gray-300 p-1.5;
+}
+
+table.tkrec-table th {
+  @apply bg-[#f4f4f4] font-bold text-gray-700;
+}
+
+.tkrec-absent {
+  @apply text-red-600 font-bold bg-[#ffeaea];
+}
+
+.tkrec-present {
+  @apply text-green-700 font-bold;
+}
